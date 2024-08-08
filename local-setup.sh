@@ -19,4 +19,12 @@ else
   brew install git
 fi
 
+# hypervisor should be installed
+if (multipass version)
+then
+  echo 'multipass is installed'
+else
+  echo 'installing multipass'
+  brew install multipass
+fi
 
