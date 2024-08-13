@@ -22,9 +22,20 @@ fi
 # hypervisor should be installed
 if (multipass version)
 then
-  echo 'multipass is installed'
+  echo 'multipass is already installed'
 else
   echo 'installing multipass'
   brew install multipass
 fi
+
+
+# the VM relativepath should exist
+if (multipass info relativepath)
+then
+  echo 'the VM relativepath already exists'
+else
+  echo 'creating the VM relativepath'
+  multipass launch --name relativepath
+fi
+
 
