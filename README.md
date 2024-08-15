@@ -9,4 +9,7 @@ On a Mac run this script:
 # project
 Build and deploy an automated production ready web server
 
+`$SHELL local-setup-darwin.sh && $SHELL create-vm.sh && multipass transfer 
+webserver.sh relativepath: && multipass exec relativepath -- bash 
+webserver.sh  && multipass shell relativepath`
 
