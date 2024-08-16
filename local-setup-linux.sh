@@ -17,6 +17,14 @@ else
   echo 'installing git'
   sudo apt install -y git
 fi
+# snap should be installed
+if (which snap)
+then
+  echo 'snap is already installed'
+else
+  echo 'installing snap'
+  sudo apt install -y snapd
+fi
 
 # hypervisor should be installed
 if (multipass version)
@@ -24,7 +32,7 @@ then
   echo 'multipass is already installed'
 else
   echo 'installing multipass'
-  sudp snap install multipass
+  sudo snap install multipass
 fi
 
 
