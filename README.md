@@ -2,30 +2,11 @@
 Repository for Relative Path Cycle 10
 
 
-# LOCAL SETUP:
+# local setup
 On a Mac run this script:
-`$SHELL local-setup-darwin.sh`
+`$SHELL local-setup.sh`
 
-On a Linux run this script:
-$SHELL local-setup-linux.sh
+# project
+Build and deploy an automated production ready web server
 
-
-
-
-# PROJECT DETAILS:
-Build and deploy an automated production ready Nginx web server on any machine.
-
-This code base contains scripts that when ran will automatically build an Ubuntu server 
-for us.
-
-We are using Multipass which is a lightweight tool that simplifies the management of 
-Virtual Machines for development and testing. It's specifically used for Ububtu. Which is 
-why we chose it.
-
-
-
-
-`$SHELL local-setup-darwin.sh && $SHELL create-vm.sh && multipass transfer 
-webserver.sh relativepath: && multipass exec relativepath -- bash 
-webserver.sh  && multipass shell relativepath`
 
