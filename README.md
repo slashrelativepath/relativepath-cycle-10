@@ -21,8 +21,7 @@ On Linux run this script:
  `$SHELL local-setup-linux.sh`
 
 # deploy web server 
- `$SHELL create-vm.sh && multipass transfer webserver.sh relativepath: && multipass exec 
-relativepath -- bash webserver.sh  && multipass shell relativepath`
+ `$SHELL create-vm.sh && multipass transfer webserver.sh relativepath: && multipass exec relativepath -- bash webserver.sh  && multipass shell relativepath`
 
 # delete the virtual machine
  `$SHELL delete-vm.sh`
